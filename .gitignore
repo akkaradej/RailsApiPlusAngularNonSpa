@@ -13,6 +13,11 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+############
+### Node ###
+
+/node_modules
+
 ##############
 ### MAC OS ###
 
@@ -65,4 +70,22 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-##################
+########################
+### IDEs and editors ###
+
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+
+############
+### Misc ###
+
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings

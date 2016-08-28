@@ -18,6 +18,12 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Babel, Rails 5 and Sprockets 4 with Sprockets Commoner
+# http://9elements.com/io/index.php/babel-rails-5-and-sprockets-4/
+gem 'sprockets', '4.0.0.beta3'
+gem 'babel-transpiler'
+gem 'sprockets-commoner'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
