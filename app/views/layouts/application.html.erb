@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>RailsApiPlusView</title>
+    <base href="/">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <app-root>Loading</app-root>
     <%= yield %>
+    <%= javascript_include_tag 'main' %>
   </body>
 </html>
