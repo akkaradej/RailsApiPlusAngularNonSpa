@@ -1,5 +1,13 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app.module';
+import { PostsIndexModule } from './posts/posts-index/posts-index.module';
+import { PostsShowModule } from './posts/posts-show/posts-show.module';
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+const modules = {
+  'posts': {
+    'index': PostsIndexModule,
+    'show': PostsShowModule,  
+  }
+}
+
+platformBrowserDynamic().bootstrapModule(modules[$controllerName][$actionName]);

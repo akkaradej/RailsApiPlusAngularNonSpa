@@ -8,7 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <app-root>Loading</app-root>
+    <script>
+      var $controllerName = '<%= controller_name %>';
+      var $actionName = '<%= action_name %>';
+    </script>
+    <<%= controller_name %>-<%= action_name %>>Loading</<%= controller_name %>-<%= action_name %>>
     <%= yield %>
     <%= javascript_include_tag 'main' %>
   </body>

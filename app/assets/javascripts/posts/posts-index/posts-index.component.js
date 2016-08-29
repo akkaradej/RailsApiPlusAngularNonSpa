@@ -1,10 +1,10 @@
 import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: ''
+  selector: 'posts-index',
+  template: 'Hello, posts index'
 })
-export class AppComponent {
+export class PostsIndexComponent {
   constructor() {
     
   }
