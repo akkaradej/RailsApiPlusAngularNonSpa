@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example project for setting up Rails 5, Rails API + Angular2 with non-spa. The application routes via Rails router.
 
-Things you may want to cover:
+Setup
 
-* Ruby version
+* bundle install
 
-* System dependencies
+* npm install
 
-* Configuration
+Start
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rails s
