@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsApiPlusView</title>
+    <title>RailsApiPlusAngularNonSpa</title>
     <base href="/">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,10 +9,8 @@
   </head>
   <body>
     <script>
-      var $controllerName = '<%= controller_name %>';
-      var $actionName = '<%= action_name %>';
+      var $moduleNames = [];
     </script>
-    <<%= controller_name %>-<%= action_name %>>Loading</<%= controller_name %>-<%= action_name %>>
     <%= yield %>
     <%= javascript_include_tag 'main' %>
   </body>

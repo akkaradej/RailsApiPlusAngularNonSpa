@@ -1,10 +1,10 @@
 import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'posts-show',
-  template: 'Hello, posts show'
+  selector: 'post-detail',
+  template: 'Hello, post detail'
 })
-export class PostsShowComponent {
+export class PostDetailComponent {
   constructor() {
     
   }

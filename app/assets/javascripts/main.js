@@ -1,13 +1,13 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { PostsIndexModule } from './posts/posts-index/posts-index.module';
-import { PostsShowModule } from './posts/posts-show/posts-show.module';
+import { PostListModule } from './posts/post-list/post-list.module';
+import { PostDetailModule } from './posts/post-detail/post-detail.module';
 
 const modules = {
-  'posts': {
-    'index': PostsIndexModule,
-    'show': PostsShowModule,  
-  }
+  'post-list': PostListModule,
+  'post-detail': PostDetailModule
 }
 
-platformBrowserDynamic().bootstrapModule(modules[$controllerName][$actionName]);
+for (let moduleName of $moduleNames) {
+  platformBrowserDynamic().bootstrapModule(modules[moduleName]);    
+}
